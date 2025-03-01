@@ -1,0 +1,23 @@
+server:
+  port: 9211
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/club?serverTimezone=UTC
+    username: root
+    password: 203619
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    redis:
+      host: localhost
+      port: 6379
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  type-aliases-package: com.example.societies.pojo
+  configuration:
+    map-underscore-to-camel-case: false
+
+
+
+
+
